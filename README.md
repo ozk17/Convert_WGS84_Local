@@ -19,7 +19,14 @@ Optimization and Performance: Performance is a key focus area for us. The librar
 Usage Examples
 
 python
-Copy code
+
+import SRID300002OZ as OZ
+latitude=10
+longitude=20
+tm30_x, tm30_y = OZ.wgs84_to_turef_tm30(latitude, longitude)
+
+print(tm30_y,tm30_x)
+
 # Import the library
 import custom_coord_conversion
 
