@@ -21,20 +21,23 @@ Usage Examples
 python
 
 import SRID300002OZ as OZ
+
 latitude=10
+
 longitude=20
+
 tm30_x, tm30_y = OZ.wgs84_to_turef_tm30(latitude, longitude)
 
 print(tm30_y,tm30_x)
 
 # Import the library
-import custom_coord_conversion
+import import SRID300002OZ
 
 # Perform transformation from SRID 30002 to WGS 84
-result = custom_coord_conversion.srid_to_wgs84(30002, x=123456, y=789012)
+tm30_x, tm30_y = OZ.wgs84_to_turef_tm30(latitude, longitude)
 
 # Obtain the transformed coordinates
-print("WGS 84 Coordinates: ", result)
+print(tm30_y,tm30_x)
 Conclusion
 
 With this library, the process of transforming data based on the SRID 30002 coordinate system to WGS 84 is now simplified and expedited. Users can confidently use this library in their geospatial data analysis and mapping projects to seamlessly integrate and analyze data from different coordinate systems.
