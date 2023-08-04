@@ -26,7 +26,7 @@ latitude=10
 
 longitude=20
 
-tm30_x, tm30_y = OZ.wgs84_to_turef_tm30(latitude, longitude)
+tm30_x, tm30_y = OZ.convert(latitude, longitude)
 
 print(tm30_y,tm30_x)
 
@@ -34,7 +34,7 @@ print(tm30_y,tm30_x)
 import import SRID300002OZ
 
 # Perform transformation from SRID 30002 to WGS 84
-tm30_x, tm30_y = OZ.wgs84_to_turef_tm30(latitude, longitude)
+tm30_x, tm30_y = OZ.convert(latitude, longitude)
 
 # Obtain the transformed coordinates
 print(tm30_y,tm30_x)
