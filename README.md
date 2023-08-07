@@ -20,7 +20,7 @@ Usage Examples
 
 python
 
-import SRID300002OZ as OZ
+form OZ import SRID300002OZ as OZ
 
 latitude=10
 
@@ -31,7 +31,7 @@ tm30_x, tm30_y = OZ.convert(latitude, longitude)
 print(tm30_y,tm30_x)
 
 # Import the library
-import import SRID300002OZ
+from OZ import SRID300002OZ
 
 # Perform transformation from SRID 30002 to WGS 84
 tm30_x, tm30_y = OZ.convert(latitude, longitude)
